@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-color: #fff;
+  padding-bottom: 3rem;
+}
+
+.intro-loft {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 80, 80, 0.329))), url("../imagenes/cover-min.png");
+  background-image: linear-gradient(rgba(80, 80, 80, 0.329)), url("../imagenes/cover-min.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.loft-titulo {
+  color: #ed3237;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 2rem 2rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+
+.loft-description {
+  padding: 4%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.loft-text {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  letter-spacing: .8px;
+}
+
+.loft-texto-uno,
+.loft-texto-dos,
+.loft-texto-tres {
+  margin: 1rem 0;
+}
+
+.imagen-parrafo-uno,
+.imagen-parrafo-dos {
+  margin-bottom: 2rem;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 1rem auto;
+}
+
+.intro-loft,
+.card {
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+}
+
+.imagen-intro,
+.thumb {
+  width: 250px;
+  height: 200px;
+}
+
+.planta {
+  width: 250px !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  text-align: center;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cotizar-btn,
+.volver-btn {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: .8rem;
+}
+
+.cotizar-btn:hover,
+.volver-btn:hover {
+  background-color: #ed3237;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  color: white;
+}
+
+.cotizar-btn {
+  font-weight: bold !important;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .loft-titulo {
+    font-size: 2rem;
+  }
+  .loft-text {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .grid-wrapper {
+    -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+  }
+  .thumbnail-loft {
+    width: 500px;
+    height: 400px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loft-description {
+    width: 80%;
+  }
+  .grid-wrapper {
+    gap: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cotizar-btn,
+  .volver-btn {
+    font-size: 1.2rem;
+  }
+  .loft-texto-uno,
+  .loft-texto-dos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loft-texto-dos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .imagen-parrafo-uno,
+  .imagen-parrafo-dos {
+    margin: 2rem 3rem;
+  }
+  .loft-text {
+    margin: 1rem auto;
+  }
+  .dos {
+    margin: 3rem auto !important;
+  }
+  .intro-loft {
+    height: 65vh;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .small {
+    width: 400px;
+    height: 300px;
+  }
+  .grid-wrapper {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .grid-wrapper {
+    width: 85%;
+  }
+  .small {
+    width: 500px;
+    height: 400px;
+  }
+  .loft-titulo {
+    font-size: 2.5rem;
+  }
+  .loft-texto-uno,
+  .loft-texto-dos {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .loft-text {
+    max-width: 80%;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .loft-text {
+    margin: 4rem auto;
+  }
+  .planta {
+    height: 500px !important;
+    width: 300px !important;
+  }
+}
+/*# sourceMappingURL=loft.css.map */

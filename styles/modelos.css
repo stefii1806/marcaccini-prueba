@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-color: #fff;
+  padding-bottom: 3rem;
+}
+
+.intro-loft {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 80, 80, 0.329))), url("../imagenes/ext-cover.jpg");
+  background-image: linear-gradient(rgba(80, 80, 80, 0.329)), url("../imagenes/ext-cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.loft-intro,
+.modulo-intro {
+  padding-bottom: 3rem;
+}
+
+.title {
+  color: #c30101;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+
+.loft-description {
+  padding: 4%;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.loft-text,
+.modulo-text {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.loft-texto-uno,
+.loft-texto-dos,
+.loft-texto-tres {
+  margin: 2rem 0;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 1rem auto;
+}
+
+.intro-loft,
+.card {
+  margin: 2rem auto;
+  display: block;
+  text-align: center;
+}
+
+.imagen-intro,
+.thumb {
+  width: 250px;
+  height: 200px;
+}
+
+.planta {
+  width: 250px !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cotizar-btn,
+.volver-btn {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: .8rem;
+}
+
+.cotizar-btn:hover,
+.volver-btn:hover {
+  background-color: #c30101;
+  border: #c30101;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  color: white;
+}
+
+.cotizar-btn {
+  font-weight: bold !important;
+  border: 2px solid black;
+}
+
+.cotizar-btn:hover {
+  background-color: #c30101;
+  border: #c30101;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .loft-text,
+  .modulo-text {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .grid-wrapper {
+    -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+  }
+  .thumbnail-loft {
+    width: 500px;
+    height: 400px;
+  }
+  .planta {
+    height: 500px !important;
+    width: 400px !important;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loft-description {
+    width: 80%;
+  }
+  .grid-wrapper {
+    gap: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .cotizar-btn,
+  .volver-btn {
+    font-size: 1.2rem;
+  }
+  .loft-texto-uno,
+  .loft-texto-dos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+  .loft-text {
+    margin: 4rem auto;
+  }
+  .imagen-parrafo-dos {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .loft-text,
+  .modulo-text {
+    max-width: 80%;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .planta {
+    height: 600px !important;
+    width: 500px !important;
+  }
+}
+/*# sourceMappingURL=modelos.css.map */

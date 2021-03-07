@@ -1,0 +1,240 @@
+ $titleFont: 'Poppins',
+ sans-serif;
+ //$textFont: 'Playfair Display',
+ //serif;
+ $textFont: 'Roboto Slab',
+ serif;
+ $rojoMarcaccini: #ed3237;
+
+ //DEFAULT
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ //STEEL FRAME
+
+ #steel-frame {
+     background-color: #fff;
+     //background-image: url('../backgrounds/bright_squares.png');
+     background-repeat: repeat;
+     padding: 0 auto;
+ }
+
+
+ .steel-frame-titulo {
+     color: $rojoMarcaccini;
+     font-family: $titleFont;
+     text-align: center;
+     font-size: 1.8rem;
+     letter-spacing: 1.2px;
+     padding: 8rem 1rem 1rem;
+ }
+
+ .steel-frame-video {
+     padding: 1rem 2rem;
+     margin: 0;
+ }
+
+ .video-barbieri {
+     width: 300px;
+     height: 200px;
+ }
+
+ .sandwich {
+     width: 98%;
+ }
+
+ .wrapper-steel-frame,
+ .wrapper-steel-frame-2,
+ .wrapper-steel-frame-3,
+ .wrapper-steel-frame-4 {
+     text-align: center;
+ }
+
+ .wrapper-steel-frame-2 {
+     margin: 2.5rem auto;
+ }
+
+ .steel-frame-texto {
+     max-width: 80%;
+     margin: 0 auto 2rem;
+     padding-bottom: 1rem;
+     text-align: center;
+     font-family: $textFont;
+     line-height: 1.7;
+     letter-spacing: .8px;
+     font-size: 1.1rem;
+ }
+
+ //BUTTONS 
+
+ .buttons {
+     text-align: center;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .modelos-btn,
+ .volver-btn {
+     font-family: $titleFont;
+     border: 1px solid black;
+     background-color: transparent;
+     cursor: pointer;
+     padding: 0.5rem 1rem;
+     margin: 1rem;
+     font-size: .8rem;
+
+     &:hover {
+         background-color: $rojoMarcaccini;
+         transition: .1s ease-in;
+         color: white;
+     }
+ }
+
+ .modelos-btn {
+     font-weight: bold !important;
+     border: 2px solid black;
+
+     &:hover {
+         background-color: $rojoMarcaccini;
+         transition: .1s ease-in;
+         color: white;
+     }
+ }
+
+
+ @media screen and(min-width:574px) {
+
+     .video-barbieri {
+         width: 500px;
+         height: 400px;
+     }
+
+ }
+
+ @media screen and (min-width: 768px) {
+
+
+     .video-barbieri {
+         width: 600px;
+         height: 300px;
+     }
+
+     .steel-frame-titulo,
+     .modelos-titulo {
+         margin-top: 4rem;
+         font-size: 2rem;
+         letter-spacing: 1.2px;
+     }
+
+     .steel-frame-texto,
+     .modelos-texto {
+         max-width: 80%;
+         text-align: left;
+         font-size: 1.2rem;
+     }
+
+     .modelos-btn,
+     .volver-btn {
+         font-size: 1.2rem;
+     }
+
+
+     .sandwich {
+         width: 80%;
+     }
+
+     .card-container {
+         width: 80%;
+         margin: 1rem auto;
+         text-align: center;
+         padding-bottom: 4rem;
+     }
+
+     .card-modelos img {
+         width: 400px;
+         height: 280px;
+     }
+
+     .loft,
+     .modulo {
+         font-size: 1.5rem;
+     }
+
+ }
+
+ @media screen and (min-width: 1366px) {
+
+     .sandwich {
+         width: 100%;
+     }
+
+     .wrapper-steel-frame,
+     .wrapper-steel-frame-2,
+     .wrapper-steel-frame-3,
+     .wrapper-steel-frame-4 {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         width: 85%;
+         margin: 5rem auto;
+     }
+
+     .wrapper-modelos {
+         width: 85%;
+         margin: 0 auto;
+     }
+
+     .divisor-dos {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+     }
+
+     .card-container {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         text-align: left;
+         width: 75%;
+     }
+
+ }
+
+ @media screen and (min-width: 1920px) {
+
+     .wrapper-modelos {
+         width: 50%;
+         margin: 0 auto;
+     }
+
+     .steel-frame-titulo,
+     .modelos-titulo {
+         font-size: 2.5rem;
+     }
+
+     .steel-frame-texto,
+     .modelos-texto {
+         max-width: 90%;
+         font-size: 1.3rem;
+         text-align: left;
+     }
+
+     .card-container {
+         width: 55%;
+     }
+
+     .card-modelos img {
+         width: 500px;
+         height: 380px;
+     }
+
+     .steel-frame-video {
+         padding: 0 1rem 2rem;
+     }
+ }

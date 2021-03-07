@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titulo-seccion-nosotros {
+  padding-top: 15vh;
+}
+
+.cover-nosotros {
+  margin-top: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 80, 80, 0.329))), url("../imagenes/placeholder.jpg");
+  background-image: linear-gradient(rgba(80, 80, 80, 0.329)), url("../imagenes/placeholder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.fotorama {
+  width: 800px;
+  height: 650px;
+}
+
+.texto-nosotros {
+  max-width: 80%;
+  margin: 2rem auto 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.7;
+  letter-spacing: .8px;
+  font-size: 1.1rem;
+}
+
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+}
+
+.imagen-nosotros {
+  width: 300px;
+  height: 200px;
+}
+
+.buttons {
+  text-align: center;
+  margin: 0 auto 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modelos-btn,
+.empresa-btn {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: .8rem;
+}
+
+.modelos-btn:hover,
+.empresa-btn:hover {
+  background-color: #ed3237;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  color: white;
+}
+
+.modelos-btn {
+  font-weight: bold !important;
+  border: 2px solid black;
+}
+
+.modelos-btn:hover {
+  background-color: #ed3237;
+  border: #ed3237;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modelos-btn,
+  .empresa-btn {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=nosotros.css.map */

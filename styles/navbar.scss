@@ -1,0 +1,256 @@
+$titleFont: 'Poppins',
+sans-serif;
+$textFont: 'Playfair Display',
+serif;
+$rojoMarcaccini: #ed3237;
+
+//DEFAULT
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//NAV
+
+//360px
+
+.desktop {
+    display: none;
+}
+
+.nav-up {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #f4f8ff;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: $titleFont;
+    color: black;
+    letter-spacing: 1.3px;
+}
+
+.hover {
+    &:hover {
+        color: $rojoMarcaccini;
+    }
+}
+
+
+.logo-svg {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 70%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.burger div {
+    z-index: 900;
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-links {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    height: 85vh;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    background-color: #f4f8ff;
+    transform: translateX(100%);
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.nav-links li {
+    overflow: hidden;
+    opacity: 0;
+    letter-spacing: 1.2px;
+}
+
+.burger {
+    display: block;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-down {
+    display: none;
+}
+
+//MEDIA QUERIES NAV
+
+@media screen and (min-width: 768px) {
+
+    .logo-svg {
+        width: 80%;
+        height: 60%;
+    }
+
+    .nav-up {
+        min-height: 10vh;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav-links {
+        position: relative;
+        height: 10vh;
+        top: 0vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        background-color: #f4f8ff;
+        transform: translateX(0%);
+        transition: -webkit-transform 0.5s ease-in;
+        transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 1;
+        display: inline-block;
+    }
+
+    .nav-links li a {
+        transition: 0.5s ease-in;
+        font-size: .8rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .logo {
+        margin: 1rem;
+    }
+
+    .cta-nav {
+        border: 1.2px solid #000;
+        padding: .3rem .5rem;
+        transition: .4s ease-in;
+
+        &:hover {
+            background-color: $rojoMarcaccini;
+
+            a {
+                color: white;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+
+        .fb-nav,
+        .ig-nav {
+            font-size: 1.2rem;
+            margin: 2rem;
+
+            &:hover {
+                color: $rojoMarcaccini;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    .logo-svg {
+        width: 90%;
+        height: 80%;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .cta-nav {
+        border: 1.7px solid #000;
+        padding: .5rem .8rem;
+    }
+
+}

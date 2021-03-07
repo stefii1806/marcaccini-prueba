@@ -1,0 +1,152 @@
+$titleFont: 'Poppins',
+sans-serif;
+//$textFont: 'Playfair Display',
+//serif;
+$textFont: 'Roboto Slab',
+serif;
+$rojoMarcaccini: #ed3237;
+
+//DEFAULT
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//FOOTER
+
+footer {
+    background-color: #f4f8ff;
+    font-family: $textFont;
+    text-align: center;
+}
+
+.logo-footer {
+    width: 180px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+.direccion {
+    padding: 1rem;
+    letter-spacing: .8px;
+}
+
+i {
+    font-size: 2rem;
+    margin: .3rem;
+}
+
+.redes {
+    margin-top: 1rem;
+    letter-spacing: .8px;
+}
+
+.fb-footer {
+    margin: 1rem;
+    color: black;
+
+    &:hover {
+        color: #3b5998;
+    }
+}
+
+.ig-footer {
+    margin: 1rem;
+
+    &:hover {
+        //color: #8d375f;
+        color: #bf2e95;
+    }
+}
+
+.direccion {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.copyright {
+    font-size: .9rem;
+    display: inline;
+    letter-spacing: .5px;
+}
+
+.separador {
+    display: none;
+}
+
+.design {
+    display: inline-block;
+    font-size: .9rem;
+    padding: 1rem .5rem 1rem;
+    text-align: right;
+    margin-right: .5rem 0;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ver {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.tagline {
+    margin-bottom: 2rem;
+}
+
+.icons {
+    font-size: .5rem;
+    text-align: right;
+    display: block;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-footer {
+        width: 220px;
+        height: 190px;
+    }
+
+    .container-footer {
+        display: grid;
+        grid-template-columns: repeat(2, .5fr);
+        margin: 1rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .telefonos {
+        text-align: left;
+        width: 70%;
+    }
+
+    .separador {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .telefonos {
+        width: 60%;
+    }
+
+    .redes,
+    .direccion {
+        font-size: 1.2rem;
+    }
+}
