@@ -1,3 +1,6 @@
+https://stefii1806.github.io/marcaccini-prueba/
+
+
 Compuesta por un index con links a distintas secciones:
 
 Steel frame: con un video de Barbieri, imágenes de tipos de revestimientos hechas por la arquitecta (falta el copy que tiene que hacerlo ella), carrousel con imágenes de distintas fases de construcción (las debe la arquitecta).
